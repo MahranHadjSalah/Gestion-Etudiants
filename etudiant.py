@@ -24,3 +24,7 @@ class GestionEtudiants:
         if etudiant.matricule in self.etudiants:
             raise ValueError(f"Matricule {etudiant.matricule} deja utilise")
         self.etudiants[etudiant.matricule] = etudiant
+
+    def supprimer(self, matricule):
+        """Supprime l'etudiant ; renvoie False s'il n'existe pas."""
+        return self.etudiants.pop(matricule, None) is not None
