@@ -28,3 +28,10 @@ class GestionEtudiants:
     def supprimer(self, matricule):
         """Supprime l'etudiant ; renvoie False s'il n'existe pas."""
         return self.etudiants.pop(matricule, None) is not None
+
+    def afficher(self):
+        """Affiche tous les etudiants."""
+        if not self.etudiants:
+            print("Aucun etudiant.")
+        for etudiant in self.etudiants.values():
+            print(etudiant)
