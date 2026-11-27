@@ -13,3 +13,7 @@ Application de gestion des etudiants (TP Git & GitLab).
 ```bash
 python main.py
 ```
+
+## Auteur
+
+Mahran Hadj Salah - D-INFO 2026-2027
