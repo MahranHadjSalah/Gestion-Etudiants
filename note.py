@@ -24,3 +24,9 @@ class GestionNotes:
         if not 0 <= note.valeur <= 20:
             raise ValueError("La note doit etre comprise entre 0 et 20")
         self.notes.append(note)
+
+    def afficher(self, matricule=None):
+        """Affiche les notes (toutes, ou celles d'un etudiant)."""
+        for note in self.notes:
+            if matricule is None or note.matricule == matricule:
+                print(note)
