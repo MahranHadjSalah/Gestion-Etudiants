@@ -17,19 +17,19 @@ def main():
     etudiants.ajouter(Etudiant(2, "Trabelsi", "Amira"))
     etudiants.ajouter(Etudiant(3, "Gharbi", "Youssef"))
     etudiants.supprimer(3)
-    print("
--- Etudiants --")
+    print()
+    print("-- Etudiants --")
     etudiants.afficher()
 
     notes = GestionNotes()
     notes.ajouter(Note(1, "DevOps", 15.5))
     notes.ajouter(Note(1, "Python", 13))
     notes.ajouter(Note(2, "DevOps", 17))
-    print("
--- Notes --")
+    print()
+    print("-- Notes --")
     notes.afficher()
-    print("
--- Moyennes --")
+    print()
+    print("-- Moyennes --")
     for matricule in etudiants.etudiants:
         print(f"Etudiant {matricule} : {notes.moyenne(matricule)}/20")
 
