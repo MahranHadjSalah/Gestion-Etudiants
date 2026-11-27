@@ -5,7 +5,7 @@ from note import Note
 
 def afficher_message():
     """Affiche le message d'accueil de l'application."""
-    print("Bienvenue dans la gestion des étudiants")
+    print("Bienvenue dans la gestion des étudiants et des notes")
 
 
 def main():
