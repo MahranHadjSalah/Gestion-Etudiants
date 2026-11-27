@@ -30,3 +30,10 @@ class GestionNotes:
         for note in self.notes:
             if matricule is None or note.matricule == matricule:
                 print(note)
+
+    def moyenne(self, matricule):
+        """Calcule la moyenne d'un etudiant (None s'il n'a aucune note)."""
+        valeurs = [n.valeur for n in self.notes if n.matricule == matricule]
+        if not valeurs:
+            return None
+        return round(sum(valeurs) / len(valeurs), 2)
